@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		920429372C3CAC2900A98BDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920429362C3CAC2900A98BDD /* AppDelegate.swift */; };
 		920429392C3CAC2900A98BDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920429382C3CAC2900A98BDD /* SceneDelegate.swift */; };
-		9204293B2C3CAC2900A98BDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204293A2C3CAC2900A98BDD /* ViewController.swift */; };
+		9204293B2C3CAC2900A98BDD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9204293A2C3CAC2900A98BDD /* LoginViewController.swift */; };
 		920429402C3CAC2A00A98BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9204293F2C3CAC2A00A98BDD /* Assets.xcassets */; };
 		920429432C3CAC2A00A98BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920429412C3CAC2A00A98BDD /* LaunchScreen.storyboard */; };
+		921278922C3CAF3A00D9C4E6 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921278912C3CAF3A00D9C4E6 /* Bindable.swift */; };
+		921278942C3CAF5700D9C4E6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921278932C3CAF5700D9C4E6 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		920429332C3CAC2900A98BDD /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		920429362C3CAC2900A98BDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		920429382C3CAC2900A98BDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9204293A2C3CAC2900A98BDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9204293A2C3CAC2900A98BDD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9204293F2C3CAC2A00A98BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		920429422C3CAC2A00A98BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		920429442C3CAC2A00A98BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		921278912C3CAF3A00D9C4E6 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		921278932C3CAF5700D9C4E6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +58,20 @@
 		920429352C3CAC2900A98BDD /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				9204293A2C3CAC2900A98BDD /* ViewController.swift */,
 				928C86762C3CAD87008AA51C /* Resources */,
+				921278902C3CAF1C00D9C4E6 /* App */,
+				9204293A2C3CAC2900A98BDD /* LoginViewController.swift */,
+				921278932C3CAF5700D9C4E6 /* LoginViewModel.swift */,
+				921278912C3CAF3A00D9C4E6 /* Bindable.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		921278902C3CAF1C00D9C4E6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		928C86762C3CAD87008AA51C /* Resources */ = {
@@ -142,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9204293B2C3CAC2900A98BDD /* ViewController.swift in Sources */,
+				9204293B2C3CAC2900A98BDD /* LoginViewController.swift in Sources */,
 				920429372C3CAC2900A98BDD /* AppDelegate.swift in Sources */,
+				921278922C3CAF3A00D9C4E6 /* Bindable.swift in Sources */,
+				921278942C3CAF5700D9C4E6 /* LoginViewModel.swift in Sources */,
 				920429392C3CAC2900A98BDD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
