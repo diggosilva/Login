@@ -5,7 +5,7 @@
 //  Created by Diggo Silva on 08/07/24.
 //
 
-import UIKit
+import Foundation
 
 enum LoginViewControllerStates {
     case waitingLog
