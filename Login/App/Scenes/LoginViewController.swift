@@ -41,10 +41,7 @@ class LoginViewController: UIViewController {
     }
     
     private func showLoggedState() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.loginView.label1.text = self.viewModel.label2
-            self.loginView.label1.textColor = .systemGreen
-        }
+        
     }
     
     private func showErrorState() {

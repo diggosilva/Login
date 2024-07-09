@@ -15,6 +15,7 @@
 		921278922C3CAF3A00D9C4E6 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921278912C3CAF3A00D9C4E6 /* Bindable.swift */; };
 		921278942C3CAF5700D9C4E6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921278932C3CAF5700D9C4E6 /* LoginViewModel.swift */; };
 		921278982C3CB3AA00D9C4E6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921278972C3CB3AA00D9C4E6 /* LoginView.swift */; };
+		92A707622C3D88D10072F26D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A707612C3D88D10072F26D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		921278912C3CAF3A00D9C4E6 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		921278932C3CAF5700D9C4E6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		921278972C3CB3AA00D9C4E6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		92A707612C3D88D10072F26D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				921278912C3CAF3A00D9C4E6 /* Bindable.swift */,
+				92A707612C3D88D10072F26D /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				921278922C3CAF3A00D9C4E6 /* Bindable.swift in Sources */,
 				921278942C3CAF5700D9C4E6 /* LoginViewModel.swift in Sources */,
 				920429392C3CAC2900A98BDD /* SceneDelegate.swift in Sources */,
+				92A707622C3D88D10072F26D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
