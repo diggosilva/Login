@@ -18,9 +18,23 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+        setNavBar()
+        setDelegatesAndDataSources()
         handleStates()
         viewModel.fetchData()
+    }
+    
+    private func setNavBar() {
+        title = "Login"
+    }
+    
+    private func setDelegatesAndDataSources() {
+        loginView.delegate = self
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     private func handleStates() {
@@ -46,5 +60,40 @@ class LoginViewController: UIViewController {
     
     private func showErrorState() {
         
+    }
+}
+
+extension LoginViewController: LoginViewDelegate {
+    func eyeImageButtonTapped() {
+        loginView.isVisible.toggle()
+        loginView.passwordTF.isSecureTextEntry.toggle()
+        
+        if loginView.isVisible {
+            loginView.eyeImageButton.setImage(UIImage(systemName: "eye")?.withTintColor(.gray, renderingMode: .alwaysOriginal), for: .normal)
+        } else {
+            loginView.eyeImageButton.setImage(UIImage(systemName: "eye.slash")?.withTintColor(.gray, renderingMode: .alwaysOriginal), for: .normal)
+        }
+    }
+    
+    func rememberButtonTapped() {
+        loginView.isChecked.toggle()
+        
+        if loginView.isChecked {
+            loginView.squareImageButton.setImage(UIImage(systemName: "checkmark.square")?.withTintColor(.gray, renderingMode: .alwaysOriginal), for: .normal)
+        } else {
+            loginView.squareImageButton.setImage(UIImage(systemName: "square")?.withTintColor(.gray, renderingMode: .alwaysOriginal), for: .normal)
+        }
+    }
+    
+    func forgotPasswordButtonTapped() {
+        print("DEBUG: Clicou no botão ESQUECEU A SENHA")
+    }
+    
+    func enterButtonTapped() {
+        print("DEBUG: Clicou no botão ENTRAR")
+    }
+    
+    func dontHaveAnAccountTapped() {
+        print("DEBUG: Clicou no botão NÃO TEM CONTA")
     }
 }
