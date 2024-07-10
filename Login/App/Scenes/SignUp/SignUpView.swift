@@ -9,8 +9,6 @@ import UIKit
 
 protocol SignUpViewDelegate: AnyObject {
     func eyeImageButtonTapped()
-    func rememberButtonTapped()
-    func forgotPasswordButtonTapped()
     func signUpButtonTapped()
     func alreadyHaveAnAccountButtonTapped()
 }
@@ -189,14 +187,6 @@ class SignUpView: UIView {
     
     @objc func eyeImageButtonTapped() {
         delegate?.eyeImageButtonTapped()
-    }
-    
-    @objc func rememberButtonTapped() {
-        delegate?.rememberButtonTapped()
-    }
-    
-    @objc func forgotPasswordButtonTapped() {
-        delegate?.forgotPasswordButtonTapped()
     }
     
     @objc func signUpButtonTapped() {
