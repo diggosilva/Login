@@ -15,6 +15,7 @@
 		921278922C3CAF3A00D9C4E6 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921278912C3CAF3A00D9C4E6 /* Bindable.swift */; };
 		921278942C3CAF5700D9C4E6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921278932C3CAF5700D9C4E6 /* LoginViewModel.swift */; };
 		921278982C3CB3AA00D9C4E6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921278972C3CB3AA00D9C4E6 /* LoginView.swift */; };
+		929CB0542C3EBA69008200BE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CB0532C3EBA69008200BE /* SignUpViewController.swift */; };
 		92A707622C3D88D10072F26D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A707612C3D88D10072F26D /* Extensions.swift */; };
 		92A707672C3D952E0072F26D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A707662C3D952E0072F26D /* User.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		921278912C3CAF3A00D9C4E6 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		921278932C3CAF5700D9C4E6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		921278972C3CB3AA00D9C4E6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		929CB0532C3EBA69008200BE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		92A707612C3D88D10072F26D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		92A707662C3D952E0072F26D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 		92A707642C3D95110072F26D /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				929CB0532C3EBA69008200BE /* SignUpViewController.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				921278922C3CAF3A00D9C4E6 /* Bindable.swift in Sources */,
 				92A707672C3D952E0072F26D /* User.swift in Sources */,
 				921278942C3CAF5700D9C4E6 /* LoginViewModel.swift in Sources */,
+				929CB0542C3EBA69008200BE /* SignUpViewController.swift in Sources */,
 				920429392C3CAC2900A98BDD /* SceneDelegate.swift in Sources */,
 				92A707622C3D88D10072F26D /* Extensions.swift in Sources */,
 			);
