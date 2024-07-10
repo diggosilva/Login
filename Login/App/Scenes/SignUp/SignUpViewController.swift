@@ -9,4 +9,15 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
+//    private var signUpView = SignUpView()
+    
+    override func loadView() {
+        super.loadView()
+//        view = signUpView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
 }
