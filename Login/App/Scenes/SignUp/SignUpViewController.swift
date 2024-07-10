@@ -9,15 +9,20 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-//    private var signUpView = SignUpView()
+    private var signUpView = SignUpView()
     
     override func loadView() {
         super.loadView()
-//        view = signUpView
+        view = signUpView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
 }
