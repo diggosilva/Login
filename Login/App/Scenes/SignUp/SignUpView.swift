@@ -80,6 +80,15 @@ class SignUpView: UIView {
         return textField
     }()
     
+    lazy var eyePasswordButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(systemName: "eye.slash")?.withTintColor(.gray, renderingMode: .alwaysOriginal), for: .normal)
+        button.setTitleColor(.gray, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 12)
+        button.addTarget(self, action: #selector(eyeImageButtonTapped), for: .touchUpInside)
+        return button
+    }()
     
     lazy var bgTextFields3: UIView = {
         let view = UIView()
@@ -108,6 +117,15 @@ class SignUpView: UIView {
         return textField
     }()
     
+    lazy var eyeConfirmPasswordButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(systemName: "eye.slash")?.withTintColor(.gray, renderingMode: .alwaysOriginal), for: .normal)
+        button.setTitleColor(.gray, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 12)
+        button.addTarget(self, action: #selector(eyeImageButtonTapped), for: .touchUpInside)
+        return button
+    }()
     
     lazy var bgTextFields4: UIView = {
         let view = UIView()
@@ -129,6 +147,7 @@ class SignUpView: UIView {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.attributedPlaceholder = NSAttributedString(string: "Digite seu nome", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        textField.clearButtonMode = .whileEditing
         textField.autocapitalizationType = .words
         textField.autocorrectionType = .no
         //        textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
@@ -197,8 +216,8 @@ class SignUpView: UIView {
         backgroundColor = .systemBackground
         addSubviews([logoImage,
                      bgTextFields1, emailImage, emailTF,
-                     bgTextFields2, passwordImage, passwordTF,
-                     bgTextFields3, confirmPasswordImage, confirmPasswordTF,
+                     bgTextFields2, passwordImage, passwordTF, eyePasswordButton,
+                     bgTextFields3, confirmPasswordImage, confirmPasswordTF, eyeConfirmPasswordButton,
                      bgTextFields4, nameImage, nameTF,
                      signUpButton, alreadyHaveAnAccountButton])
     }
@@ -241,6 +260,11 @@ class SignUpView: UIView {
             passwordTF.leadingAnchor.constraint(equalTo: passwordImage.trailingAnchor, constant: 5),
             passwordTF.trailingAnchor.constraint(equalTo: bgTextFields2.trailingAnchor, constant: -20),
             passwordTF.centerYAnchor.constraint(equalTo: passwordImage.centerYAnchor),
+            
+            eyePasswordButton.centerYAnchor.constraint(equalTo: bgTextFields2.centerYAnchor),
+            eyePasswordButton.trailingAnchor.constraint(equalTo: bgTextFields2.trailingAnchor, constant: -25),
+            eyePasswordButton.widthAnchor.constraint(equalToConstant: 25),
+            eyePasswordButton.heightAnchor.constraint(equalToConstant: 20),
         ])
         
         NSLayoutConstraint.activate([
@@ -257,6 +281,11 @@ class SignUpView: UIView {
             confirmPasswordTF.leadingAnchor.constraint(equalTo: confirmPasswordImage.trailingAnchor, constant: 5),
             confirmPasswordTF.trailingAnchor.constraint(equalTo: bgTextFields3.trailingAnchor, constant: -20),
             confirmPasswordTF.centerYAnchor.constraint(equalTo: confirmPasswordImage.centerYAnchor),
+            
+            eyeConfirmPasswordButton.centerYAnchor.constraint(equalTo: bgTextFields3.centerYAnchor),
+            eyeConfirmPasswordButton.trailingAnchor.constraint(equalTo: bgTextFields3.trailingAnchor, constant: -25),
+            eyeConfirmPasswordButton.widthAnchor.constraint(equalToConstant: 25),
+            eyeConfirmPasswordButton.heightAnchor.constraint(equalToConstant: 20),
         ])
         
         NSLayoutConstraint.activate([

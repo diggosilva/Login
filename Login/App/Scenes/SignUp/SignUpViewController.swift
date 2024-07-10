@@ -18,6 +18,15 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavBar()
+        setDelegatesAndDataSources()
+    }
+    
+    private func setNavBar() {
+        title = "Cadastro"
+    }
+    
+    private func setDelegatesAndDataSources() {
         
     }
     
