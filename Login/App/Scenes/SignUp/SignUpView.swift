@@ -160,6 +160,7 @@ class SignUpView: UIView {
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .systemIndigo
         button.layer.cornerRadius = 25
+        button.isEnabled = false
         button.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
         return button
     }()
@@ -175,6 +176,7 @@ class SignUpView: UIView {
     }()
     
     weak var delegate: SignUpViewDelegate?
+    var isVisible = false
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
