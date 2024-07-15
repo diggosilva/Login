@@ -28,4 +28,13 @@ class SignUpViewModel {
         
         return isEmailValid && isSameEmail
     }
+    
+    func isPasswordValid(_ password: String?) -> Bool {
+        guard let password = password else { return false }
+        
+        let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{4,}$"
+        let passwordValid = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
+        
+        return passwordValid.evaluate(with: password)
+    }
 }
