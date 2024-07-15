@@ -49,5 +49,16 @@ class SignUpViewModel {
         let nameValid = NSPredicate(format: "SELF MATCHES %@", nameRegex)
         return nameValid.evaluate(with: name)
     }
-
+    
+    func saveUserData(name: String, completion: @escaping(Bool) -> Void) {
+        user.name = name
+        
+        repository.save(user: user) {
+            print("DEBUG: Usuário cadastrado -> EMAIL: \(self.user.email), SENHA: \(self.user.password), CONFIRMA SENHA: \(self.user.confirmPassword), NOME: \(self.user.name)")
+            completion(true)
+        } onError: {
+            print("DEBUG: Falha ao salvar usuário.")
+            completion(false)
+        }
+    }
 }
