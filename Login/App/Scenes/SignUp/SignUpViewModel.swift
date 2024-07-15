@@ -44,5 +44,10 @@ class SignUpViewModel {
         return confirmPassword == user.password
     }
     
+    func isNameValid(_ name: String) -> Bool {
+        let nameRegex = "^[a-zA-Z]+( [a-zA-Z]+)*$" // Expressão regular para verificar letras e espaços apenas entre palavras
+        let nameValid = NSPredicate(format: "SELF MATCHES %@", nameRegex)
+        return nameValid.evaluate(with: name)
+    }
 
 }
