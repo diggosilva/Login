@@ -37,4 +37,12 @@ class SignUpViewModel {
         
         return passwordValid.evaluate(with: password)
     }
+    
+    func isConfirmPasswordValid(_ confirmPassword: String?) -> Bool {
+        guard let confirmPassword = confirmPassword else { return false }
+        
+        return confirmPassword == user.password
+    }
+    
+
 }
