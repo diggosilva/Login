@@ -94,6 +94,7 @@ extension LoginViewController: LoginViewDelegate {
     }
     
     func dontHaveAnAccountTapped() {
-        print("DEBUG: Clicou no botão NÃO TEM CONTA")
+        let signUpVC = SignUpViewController()
+        navigationController?.pushViewController(signUpVC, animated: true)
     }
 }
