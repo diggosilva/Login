@@ -56,6 +56,7 @@ extension SignUpViewController: SignUpViewDelegate {
     }
     
     func alreadyHaveAnAccountButtonTapped() {
+        navigationController?.popToRootViewController(animated: true)
         
     }
     
