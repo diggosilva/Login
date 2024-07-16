@@ -20,6 +20,7 @@
 		92A707672C3D952E0072F26D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A707662C3D952E0072F26D /* User.swift */; };
 		92AF69B92C46E76600AEF5BF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF69B82C46E76600AEF5BF /* SignUpView.swift */; };
 		92AF69BB2C46E9EC00AEF5BF /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF69BA2C46E9EC00AEF5BF /* SignUpViewModel.swift */; };
+		92AF69BE2C46EA9800AEF5BF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF69BD2C46EA9800AEF5BF /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		92A707662C3D952E0072F26D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		92AF69B82C46E76600AEF5BF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		92AF69BA2C46E9EC00AEF5BF /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		92AF69BD2C46EA9800AEF5BF /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				92A707652C3D951F0072F26D /* Model */,
+				92AF69BC2C46EA8500AEF5BF /* Network */,
 				921278962C3CB34200D9C4E6 /* Scenes */,
 				921278952C3CB32D00D9C4E6 /* Utils */,
 			);
@@ -142,6 +145,14 @@
 				92A707662C3D952E0072F26D /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		92AF69BC2C46EA8500AEF5BF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				92AF69BD2C46EA9800AEF5BF /* Repository.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 				920429392C3CAC2900A98BDD /* SceneDelegate.swift in Sources */,
 				92AF69BB2C46E9EC00AEF5BF /* SignUpViewModel.swift in Sources */,
 				92A707622C3D88D10072F26D /* Extensions.swift in Sources */,
+				92AF69BE2C46EA9800AEF5BF /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
