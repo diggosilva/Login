@@ -11,7 +11,7 @@ class SignUpViewModel {
     private var user: User
     private let repository = Repository()
 
-    init(user: User) {
+    init(user: User = User(email: "", password: "", confirmPassword: "", name: "")) {
         self.user = user
     }
 
